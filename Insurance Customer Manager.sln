@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34525.116
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insurance Customer Manager", "Insurance Customer Manager\Insurance Customer Manager.csproj", "{BAA20E75-D65D-4294-AD04-8DE4C6DB2517}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InsuranceCustomerManager.GUI", "Insurance Customer Manager\InsuranceCustomerManager.GUI.csproj", "{BAA20E75-D65D-4294-AD04-8DE4C6DB2517}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insurance ustomerManager.Console", "Insurance ustomerManager.Console\Insurance ustomerManager.Console.csproj", "{0B68C051-B116-428E-B12E-0CE36440133F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{BAA20E75-D65D-4294-AD04-8DE4C6DB2517}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BAA20E75-D65D-4294-AD04-8DE4C6DB2517}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BAA20E75-D65D-4294-AD04-8DE4C6DB2517}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B68C051-B116-428E-B12E-0CE36440133F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B68C051-B116-428E-B12E-0CE36440133F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B68C051-B116-428E-B12E-0CE36440133F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B68C051-B116-428E-B12E-0CE36440133F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
