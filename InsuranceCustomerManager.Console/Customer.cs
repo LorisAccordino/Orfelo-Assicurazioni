@@ -11,9 +11,5 @@
         public string CityOfResidence { get; set; }
         public string Vehicle { get; set; }
         public string Plate { get; set; }
-
-
-
-
     }
 }
