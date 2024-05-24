@@ -1,7 +1,7 @@
 # Insurance Customer Manager
 Un'applicazione per la gestione dei clienti e delle polizze assicurative
 
-# Suddovisione del lavoro
+# Suddivisione del lavoro
 La prima parte riguarda lo sviluppo del codice è stata sviluppata da Loris Accordino, che si è dedicato a creare un codice funzionale del nostro sistema di gestione.
 
 La seconda parte è stata gestita da Francesco Accolla che ha lavorato sulla parte di database in cui verrano salvati i clienti aggiunti alla lista.
