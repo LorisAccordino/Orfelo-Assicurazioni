@@ -21,3 +21,7 @@ La tipologia di polizza e le condizioni contrattuali sono state un aspetto fonda
 
 Oltre alle informazioni contrattuali, abbiamo anche considerato le preferenze e le richieste particolari dei clienti, per rendere l'applicazione più user-friendly e per consentire una gestione più personalizzata e reattiva.
 
+# Aspetti grafici
+Per la parte di design grafico dell'applicazione, abbiamo adottato uno stile moderno e professionale, ispirato alle migliori pratiche del settore. Dopo un'accurata selezione dei colori e delle tipografie da utilizzare, ci siamo impegnati nella creazione di un'interfaccia utente intuitiva e piacevole.
+
+La scelta del design moderno è stata motivata da un desiderio di conferire un aspetto professionale e al passo con i tempi, contribuendo a creare un'esperienza visiva accattivante per gli utenti. L'utilizzo di un layout chiaro e ordinato assicura una navigazione facile e veloce, migliorando l'interattività all'interno del nostro sistema di gestione.
