@@ -30,10 +30,10 @@
         {
             label1 = new Label();
             label2 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            txtName = new TextBox();
+            txtSurname = new TextBox();
             label3 = new Label();
-            dateTimePicker1 = new DateTimePicker();
+            dateTimeDob = new DateTimePicker();
             label4 = new Label();
             label8 = new Label();
             label9 = new Label();
@@ -72,19 +72,19 @@
             label2.TabIndex = 1;
             label2.Text = "Cognome:";
             // 
-            // textBox1
+            // txtName
             // 
-            textBox1.Location = new Point(6, 24);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(179, 23);
-            textBox1.TabIndex = 2;
+            txtName.Location = new Point(6, 24);
+            txtName.Name = "txtName";
+            txtName.Size = new Size(179, 23);
+            txtName.TabIndex = 2;
             // 
-            // textBox2
+            // txtSurname
             // 
-            textBox2.Location = new Point(220, 24);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(179, 23);
-            textBox2.TabIndex = 3;
+            txtSurname.Location = new Point(220, 24);
+            txtSurname.Name = "txtSurname";
+            txtSurname.Size = new Size(179, 23);
+            txtSurname.TabIndex = 3;
             // 
             // label3
             // 
@@ -96,12 +96,13 @@
             label3.TabIndex = 4;
             label3.Text = "Data di nascita:";
             // 
-            // dateTimePicker1
+            // dateTimeDob
             // 
-            dateTimePicker1.Location = new Point(6, 78);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(179, 23);
-            dateTimePicker1.TabIndex = 5;
+            dateTimeDob.CustomFormat = "";
+            dateTimeDob.Location = new Point(6, 78);
+            dateTimeDob.Name = "dateTimeDob";
+            dateTimeDob.Size = new Size(179, 23);
+            dateTimeDob.TabIndex = 5;
             // 
             // label4
             // 
@@ -266,10 +267,10 @@
             Controls.Add(label9);
             Controls.Add(label8);
             Controls.Add(label4);
-            Controls.Add(dateTimePicker1);
+            Controls.Add(dateTimeDob);
             Controls.Add(label3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(txtSurname);
+            Controls.Add(txtName);
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "EntryDialog";
@@ -283,10 +284,10 @@
 
         private Label label1;
         private Label label2;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox txtName;
+        private TextBox txtSurname;
         private Label label3;
-        private DateTimePicker dateTimePicker1;
+        private DateTimePicker dateTimeDob;
         private Label label4;
         private Label label8;
         private Label label9;
