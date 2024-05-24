@@ -1,11 +1,12 @@
 ﻿namespace InsuranceCustomerManager.Console
 {
-    internal class Customer
+    public class Customer
     {
+        public int CustomerId { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }
         public DateTime DateOfBirth { get; set; }
-        public string CityOfBirth { get; set; }
+        public string PlaceOfBirth { get; set; }
         public string Sex { get; set; }
         
         public string CityOfResidence { get; set; }
