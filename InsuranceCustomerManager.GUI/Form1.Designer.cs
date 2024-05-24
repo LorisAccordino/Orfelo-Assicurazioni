@@ -42,27 +42,31 @@
             // 
             pictureBox1.BackColor = SystemColors.InactiveCaption;
             pictureBox1.Location = new Point(1, -2);
+            pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(266, 453);
+            pictureBox1.Size = new Size(233, 340);
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
             // button1
             // 
             button1.Font = new Font("Sylfaen", 9F, FontStyle.Bold);
-            button1.Location = new Point(12, 87);
+            button1.Location = new Point(10, 65);
+            button1.Margin = new Padding(3, 2, 3, 2);
             button1.Name = "button1";
-            button1.Size = new Size(236, 36);
+            button1.Size = new Size(206, 27);
             button1.TabIndex = 1;
             button1.Text = "+ Aggiungi un nuovo cliente";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
             button2.Font = new Font("Sylfaen", 9F, FontStyle.Bold);
-            button2.Location = new Point(12, 129);
+            button2.Location = new Point(10, 97);
+            button2.Margin = new Padding(3, 2, 3, 2);
             button2.Name = "button2";
-            button2.Size = new Size(236, 36);
+            button2.Size = new Size(206, 27);
             button2.TabIndex = 2;
             button2.Text = "- Rimuovi un cliente";
             button2.UseVisualStyleBackColor = true;
@@ -70,9 +74,10 @@
             // button3
             // 
             button3.Font = new Font("Sylfaen", 9F, FontStyle.Bold);
-            button3.Location = new Point(12, 171);
+            button3.Location = new Point(10, 128);
+            button3.Margin = new Padding(3, 2, 3, 2);
             button3.Name = "button3";
-            button3.Size = new Size(236, 36);
+            button3.Size = new Size(206, 27);
             button3.TabIndex = 3;
             button3.Text = "+ Modifica un cliente";
             button3.UseVisualStyleBackColor = true;
@@ -81,9 +86,10 @@
             // 
             pictureBox2.BackColor = SystemColors.InactiveCaption;
             pictureBox2.Image = InsuranceCustomerManager.GUI.Properties.Resources.asslogo2_removebg_preview;
-            pictureBox2.Location = new Point(32, 256);
+            pictureBox2.Location = new Point(28, 192);
+            pictureBox2.Margin = new Padding(3, 2, 3, 2);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(191, 157);
+            pictureBox2.Size = new Size(167, 118);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 4;
             pictureBox2.TabStop = false;
@@ -93,23 +99,24 @@
             label1.AutoSize = true;
             label1.BackColor = SystemColors.InactiveCaption;
             label1.Font = new Font("Sylfaen", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(64, 9);
+            label1.Location = new Point(56, 7);
             label1.Name = "label1";
-            label1.Size = new Size(125, 52);
+            label1.Size = new Size(102, 42);
             label1.TabIndex = 5;
             label1.Text = "Menù";
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(700, 338);
             Controls.Add(label1);
             Controls.Add(pictureBox2);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(pictureBox1);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "Form1";
             Text = "Orfelo assicurazioni";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
