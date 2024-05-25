@@ -1,6 +1,6 @@
 ﻿namespace InsuranceCustomerManager.GUI
 {
-    partial class EntryDialog
+    partial class CustomerDialog
     {
         /// <summary>
         /// Required designer variable.

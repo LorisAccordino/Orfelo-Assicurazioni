@@ -1,26 +1,45 @@
+using InsuranceCustomerManager.Console;
+using Microsoft.EntityFrameworkCore;
+using System.Windows.Forms;
+
 namespace InsuranceCustomerManager.GUI
 {
     public partial class MainForm : Form
     {
-        EntryDialog entryDialog = new EntryDialog();
-
-        bool load = true;
-
+        private InsuranceDbContext context;
+        private BindingSource bindingSource;
 
         public MainForm()
         {
             InitializeComponent();
+
+            context = new InsuranceDbContext();
+            context.Database.EnsureCreated();
+
+            bindingSource = new BindingSource();
+            dgvCustomers.AutoGenerateColumns = true;
+            dgvCustomers.DataSource = bindingSource;
+
+            LoadData();
         }
 
-        private void MainForm_Load(object sender, EventArgs e)
+        private void LoadData()
         {
-            dgvCustomers.AutoGenerateColumns = true;
-            dgvCustomers.DataSource = entryDialog.BindingSource;
+            context.Customers.Load();
+            bindingSource.DataSource = context.Customers.Local.ToBindingList();
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            entryDialog.ShowDialog();
+            using (var dialog = new CustomerDialog())
+            {
+                if (dialog.ShowDialog() == DialogResult.OK)
+                {
+                    context.Customers.Add(dialog.Customer);
+                    context.SaveChanges();
+                    LoadData();
+                }
+            }
         }
 
         private void btnDel_Click(object sender, EventArgs e)

@@ -132,7 +132,6 @@
             MinimumSize = new Size(818, 498);
             Name = "MainForm";
             Text = "Orfelo assicurazioni";
-            Load += MainForm_Load;
             ((System.ComponentModel.ISupportInitialize)picLogo).EndInit();
             ((System.ComponentModel.ISupportInitialize)dgvCustomers).EndInit();
             ResumeLayout(false);
