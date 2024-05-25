@@ -8,6 +8,7 @@ namespace InsuranceCustomerManager.GUI
     {
         private InsuranceDbContext context;
         private BindingSource bindingSource;
+        private CustomerDialog dialog = new CustomerDialog();
 
         public MainForm()
         {
@@ -31,14 +32,11 @@ namespace InsuranceCustomerManager.GUI
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            using (var dialog = new CustomerDialog())
+            if (dialog.ShowDialog() == DialogResult.OK)
             {
-                if (dialog.ShowDialog() == DialogResult.OK)
-                {
-                    context.Customers.Add(dialog.Customer);
-                    context.SaveChanges();
-                    LoadData();
-                }
+                context.Customers.Add(dialog.Customer);
+                context.SaveChanges();
+                LoadData();
             }
         }
 

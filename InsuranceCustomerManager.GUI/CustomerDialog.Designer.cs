@@ -115,9 +115,9 @@
             lblPob.Font = new Font("Sylfaen", 9F, FontStyle.Bold);
             lblPob.Location = new Point(7, 151);
             lblPob.Name = "lblPob";
-            lblPob.Size = new Size(129, 19);
+            lblPob.Size = new Size(121, 19);
             lblPob.TabIndex = 6;
-            lblPob.Text = "Luogo di nascita:";
+            lblPob.Text = "Città di nascita:";
             // 
             // lblVehicle
             // 
@@ -192,6 +192,7 @@
             radioBtnItaly.TabStop = true;
             radioBtnItaly.Text = "Italia";
             radioBtnItaly.UseVisualStyleBackColor = true;
+            radioBtnItaly.Visible = false;
             // 
             // radioBtnAbroad
             // 
@@ -203,6 +204,7 @@
             radioBtnAbroad.TabIndex = 19;
             radioBtnAbroad.Text = "Estero";
             radioBtnAbroad.UseVisualStyleBackColor = true;
+            radioBtnAbroad.Visible = false;
             // 
             // txtPob
             // 
@@ -262,7 +264,7 @@
             btnSubmit.UseVisualStyleBackColor = false;
             btnSubmit.Click += btnSubmit_Click;
             // 
-            // EntryDialog
+            // CustomerDialog
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -290,7 +292,7 @@
             Controls.Add(lblName);
             FormBorderStyle = FormBorderStyle.FixedDialog;
             Margin = new Padding(3, 4, 3, 4);
-            Name = "EntryDialog";
+            Name = "CustomerDialog";
             Text = "EntryDialog";
             Load += EntryDialog_Load;
             ((System.ComponentModel.ISupportInitialize)picLogo).EndInit();

@@ -11,20 +11,22 @@ namespace InsuranceCustomerManager.GUI
         public CustomerDialog()
         {
             InitializeComponent();
-        }
 
-        private void EntryDialog_Load(object sender, EventArgs e)
-        {
             bindingSource.DataSource = Customer;
 
             txtName.DataBindings.Add("Text", bindingSource, "Name", true, DataSourceUpdateMode.OnPropertyChanged, null);
             txtSurname.DataBindings.Add("Text", bindingSource, "Surname", true, DataSourceUpdateMode.OnPropertyChanged, null);
             dateTimePickerDob.DataBindings.Add("Value", bindingSource, "DateOfBirth", true, DataSourceUpdateMode.OnPropertyChanged, null);
             cmbxSex.DataBindings.Add("Text", bindingSource, "Sex", true, DataSourceUpdateMode.OnPropertyChanged, null);
-            txtPob.DataBindings.Add("Text", bindingSource, "PlaceOfBirth", true, DataSourceUpdateMode.OnPropertyChanged, null);
+            txtPob.DataBindings.Add("Text", bindingSource, "CityOfBirth", true, DataSourceUpdateMode.OnPropertyChanged, null);
             txtResCity.DataBindings.Add("Text", bindingSource, "CityOfResidence", true, DataSourceUpdateMode.OnPropertyChanged, null);
             txtVehicle.DataBindings.Add("Text", bindingSource, "Vehicle", true, DataSourceUpdateMode.OnPropertyChanged, null);
             txtPlate.DataBindings.Add("Text", bindingSource, "Plate", true, DataSourceUpdateMode.OnPropertyChanged, null);
+        }
+
+        private void EntryDialog_Load(object sender, EventArgs e)
+        {
+            dateTimePickerDob.Value = DateTime.Now;
         }
 
         private void btnSubmit_Click(object sender, EventArgs e)
