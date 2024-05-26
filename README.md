@@ -1,13 +1,33 @@
 # Orfelo Assicurazioni
 Orfelo Assicurazioni è un'applicazione per la gestione dei clienti e delle polizze assicurative. 
 
-È progettata per offrire un'esperienza intuitiva e completa nella gestione delle informazioni relative ai clienti e alle loro polizze, consentendo agli utenti di tenere traccia delle coperture assicurative in modo efficiente e organizzato.
+## Panoramica del progetto
+Orfelo Assicurazioni è un sistema software sviluppato per gestire i clienti e le polizze di un'azienda assicurativa. 
+L'applicazione consente agli utenti di registrare i dettagli dei clienti, visualizzare le loro polizze e gestire le operazioni di aggiunta, modifica ed eliminazione dei dati.
+
+### Architettura del Progetto
+
+Il progetto Orfelo Assicurazioni è stato sviluppato utilizzando il linguaggio di programmazione C# e il framework .NET. 
+La struttura del progetto è organizzata secondo le best practices di progettazione del software, con una suddivisione logica dei componenti in classi, moduli e layer.
+
+### Struttura dei File
+- **InsuranceCustomerManager.Console**: Contiene il codice per l'applicazione console in ambito test e le classi di dominio e la logica di business comune a entrambe le applicazioni.
+- **InsuranceCustomerManager.Console.Migrations**: Contiene il codice (auto generato e non) riguardante le migrazioni del DB avvenute in ambito test.
+- **InsuranceCustomerManager.GUI**: Contiene il codice per l'applicazione GUI di gestione dei clienti e delle polizze.
+
+### Diagrammi
+
+#### Diagramma delle Classi UML
+![Diagramma delle Classi UML](uml_diagram.png)
+
+#### Diagramma Entità-Relazione (ER)
+![Diagramma Entità-Relazione](er_diagram.png)
 
 ## Suddivisione del Lavoro
-- **Sviluppo del Codice:** Loris Accordino
-- **Gestione del Database:** Francesco Accolla
-- **Grafica dell'Applicazione:** Jessica Noce
-- **Curatore del Repository:** Simone Carnevale e Federico Foglieni
+- **Sviluppo del Codice**: Loris Accordino
+- **Gestione del Database**: Francesco Accolla
+- **Grafica dell'Applicazione**: Jessica Noce
+- **Curatore del Repository**: Simone Carnevale e Federico Foglieni
 
 ## Ricerca generale
 Durante lo sviluppo di Orfelo Assicurazioni, ci siamo impegnati in una ricerca dettagliata per garantire un'esperienza utente completa e personalizzata. 
@@ -21,12 +41,11 @@ Abbiamo selezionato attentamente colori e tipografie per creare un'interfaccia u
 Il design moderno contribuisce a conferire all'applicazione un aspetto professionale e contemporaneo, migliorando l'esperienza visiva degli utenti.
 
 ## Installazione
-Per installare Orfelo Assicurazioni, seguire i seguenti passaggi:
 
-1. Scaricare il repository dal link fornito.
-2. Estrarre il contenuto del file zip in una cartella sul proprio computer.
-3. Aprire il file di soluzione ```InsuranceCustomerManager.sln``` con Visual Studio.
-4. Compilare ed eseguire il progetto.
+Per installare ed eseguire l'applicazione, segui questi passaggi:
+1. Clona il repository sul tuo computer.
+2. Apri la soluzione in Visual Studio.
+3. Compila e avvia l'applicazione.
 
 ## Dipendenze
 Orfelo Assicurazioni dipende dalle seguenti tecnologie e librerie:
@@ -41,14 +60,17 @@ Assicurarsi di avere tutte le dipendenze installate correttamente prima di esegu
 Per segnalare problemi o bug nell'applicazione, si prega di aprire una nuova issue nel repository su GitHub. 
 Assicurarsi di includere una descrizione dettagliata del problema riscontrato e, se possibile, fornire passaggi per riprodurlo.
 
-## Pull Request
-Siamo aperti a contributi e miglioramenti da parte della community. 
-Se si desidera proporre una modifica o un'aggiunta al codice, si prega di aprire una pull request nel repository. 
-Assicurarsi di descrivere chiaramente le modifiche apportate e il motivo per cui sono necessarie.
-
-## Contributi
+## Contribuire
 Siamo grati a tutti coloro che contribuiscono a migliorare Orfelo Assicurazioni. 
-Se desideri contribuire al progetto, consulta il file [CONTRIBUTING.md](CONTRIBUTING.md) per ulteriori informazioni su come partecipare.
+
+Se desideri contribuire a questo progetto, segui questi passaggi:
+1. Fai una fork del repository.
+2. Crea un branch per il tuo lavoro (`git checkout -b feature/nome-feature`).
+3. Esegui i tuoi cambiamenti e commit (`git commit -am 'Aggiungi una nuova feature'`).
+4. Pusha il branch sul tuo repository forkato (`git push origin feature/nome-feature`).
+5. Apri una pull request nel repository originale.
+
+Consulta il file [CONTRIBUTING.md](CONTRIBUTING.md) per ulteriori informazioni su come partecipare.
 
 ## Release e Tags
 Assicurarsi di controllare le release e i tag nel repository per le versioni stabili e le funzionalità aggiuntive. 
