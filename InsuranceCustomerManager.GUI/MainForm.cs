@@ -1,5 +1,7 @@
 using InsuranceCustomerManager.Console;
 using Microsoft.EntityFrameworkCore;
+using System.Drawing.Text;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace InsuranceCustomerManager.GUI
@@ -10,8 +12,17 @@ namespace InsuranceCustomerManager.GUI
         private BindingSource bindingSource;
         private CustomerDialog dialog = new CustomerDialog();
 
+        private SplashScreen splashScreen = new SplashScreen();
+
         public MainForm()
         {
+            Thread t = new Thread(() =>
+            {
+                Application.Run(splashScreen);
+            });
+            t.Start();
+            Thread.Sleep(1000);
+
             InitializeComponent();
 
             context = new InsuranceDbContext();
@@ -22,6 +33,15 @@ namespace InsuranceCustomerManager.GUI
             dgvCustomers.DataSource = bindingSource;
 
             LoadData();
+
+            if (splashScreen != null && !splashScreen.IsDisposed)
+            {
+                splashScreen.Invoke(new Action(splashScreen.Close));
+            }
+
+            WindowState = FormWindowState.Minimized;
+            Show();
+            WindowState = FormWindowState.Normal;
         }
 
         private void LoadData()

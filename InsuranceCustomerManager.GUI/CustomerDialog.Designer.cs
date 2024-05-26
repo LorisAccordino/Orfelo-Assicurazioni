@@ -69,7 +69,7 @@
             lblSurname.Location = new Point(251, 7);
             lblSurname.Name = "lblSurname";
             lblSurname.Size = new Size(79, 19);
-            lblSurname.TabIndex = 1;
+            lblSurname.TabIndex = 0;
             lblSurname.Text = "Cognome:";
             // 
             // txtName
@@ -78,7 +78,7 @@
             txtName.Margin = new Padding(3, 4, 3, 4);
             txtName.Name = "txtName";
             txtName.Size = new Size(204, 27);
-            txtName.TabIndex = 2;
+            txtName.TabIndex = 1;
             // 
             // txtSurname
             // 
@@ -86,7 +86,7 @@
             txtSurname.Margin = new Padding(3, 4, 3, 4);
             txtSurname.Name = "txtSurname";
             txtSurname.Size = new Size(204, 27);
-            txtSurname.TabIndex = 3;
+            txtSurname.TabIndex = 2;
             // 
             // lblDob
             // 
@@ -95,7 +95,7 @@
             lblDob.Location = new Point(7, 79);
             lblDob.Name = "lblDob";
             lblDob.Size = new Size(120, 19);
-            lblDob.TabIndex = 4;
+            lblDob.TabIndex = 0;
             lblDob.Text = "Data di nascita:";
             // 
             // dateTimePickerDob
@@ -106,7 +106,7 @@
             dateTimePickerDob.Margin = new Padding(3, 4, 3, 4);
             dateTimePickerDob.Name = "dateTimePickerDob";
             dateTimePickerDob.Size = new Size(204, 27);
-            dateTimePickerDob.TabIndex = 5;
+            dateTimePickerDob.TabIndex = 3;
             dateTimePickerDob.Value = new DateTime(2024, 5, 24, 10, 52, 27, 0);
             // 
             // lblPob
@@ -116,7 +116,7 @@
             lblPob.Location = new Point(7, 151);
             lblPob.Name = "lblPob";
             lblPob.Size = new Size(121, 19);
-            lblPob.TabIndex = 6;
+            lblPob.TabIndex = 0;
             lblPob.Text = "Città di nascita:";
             // 
             // lblVehicle
@@ -126,7 +126,7 @@
             lblVehicle.Location = new Point(7, 292);
             lblVehicle.Name = "lblVehicle";
             lblVehicle.Size = new Size(120, 19);
-            lblVehicle.TabIndex = 10;
+            lblVehicle.TabIndex = 0;
             lblVehicle.Text = "Tipo di veicolo:";
             // 
             // lblPlate
@@ -136,7 +136,7 @@
             lblPlate.Location = new Point(251, 292);
             lblPlate.Name = "lblPlate";
             lblPlate.Size = new Size(110, 19);
-            lblPlate.TabIndex = 11;
+            lblPlate.TabIndex = 0;
             lblPlate.Text = "Targa veicolo:";
             // 
             // label5
@@ -146,7 +146,7 @@
             label5.Location = new Point(317, 253);
             label5.Name = "label5";
             label5.Size = new Size(0, 19);
-            label5.TabIndex = 12;
+            label5.TabIndex = 0;
             // 
             // lblSex
             // 
@@ -155,7 +155,7 @@
             lblSex.Location = new Point(253, 79);
             lblSex.Name = "lblSex";
             lblSex.Size = new Size(53, 19);
-            lblSex.TabIndex = 15;
+            lblSex.TabIndex = 0;
             lblSex.Text = "Sesso:";
             // 
             // cmbxSex
@@ -167,7 +167,7 @@
             cmbxSex.Margin = new Padding(3, 4, 3, 4);
             cmbxSex.Name = "cmbxSex";
             cmbxSex.Size = new Size(74, 28);
-            cmbxSex.TabIndex = 16;
+            cmbxSex.TabIndex = 4;
             // 
             // txtVehicle
             // 
@@ -178,7 +178,7 @@
             txtVehicle.Margin = new Padding(3, 4, 3, 4);
             txtVehicle.Name = "txtVehicle";
             txtVehicle.Size = new Size(204, 28);
-            txtVehicle.TabIndex = 17;
+            txtVehicle.TabIndex = 9;
             // 
             // radioBtnItaly
             // 
@@ -188,7 +188,7 @@
             radioBtnItaly.Margin = new Padding(3, 4, 3, 4);
             radioBtnItaly.Name = "radioBtnItaly";
             radioBtnItaly.Size = new Size(63, 24);
-            radioBtnItaly.TabIndex = 18;
+            radioBtnItaly.TabIndex = 6;
             radioBtnItaly.TabStop = true;
             radioBtnItaly.Text = "Italia";
             radioBtnItaly.UseVisualStyleBackColor = true;
@@ -201,7 +201,7 @@
             radioBtnAbroad.Margin = new Padding(3, 4, 3, 4);
             radioBtnAbroad.Name = "radioBtnAbroad";
             radioBtnAbroad.Size = new Size(71, 24);
-            radioBtnAbroad.TabIndex = 19;
+            radioBtnAbroad.TabIndex = 7;
             radioBtnAbroad.Text = "Estero";
             radioBtnAbroad.UseVisualStyleBackColor = true;
             radioBtnAbroad.Visible = false;
@@ -212,7 +212,7 @@
             txtPob.Margin = new Padding(3, 4, 3, 4);
             txtPob.Name = "txtPob";
             txtPob.Size = new Size(204, 27);
-            txtPob.TabIndex = 20;
+            txtPob.TabIndex = 5;
             // 
             // txtPlate
             // 
@@ -220,7 +220,7 @@
             txtPlate.Margin = new Padding(3, 4, 3, 4);
             txtPlate.Name = "txtPlate";
             txtPlate.Size = new Size(204, 27);
-            txtPlate.TabIndex = 21;
+            txtPlate.TabIndex = 10;
             // 
             // txtResCity
             // 
@@ -228,7 +228,7 @@
             txtResCity.Margin = new Padding(3, 4, 3, 4);
             txtResCity.Name = "txtResCity";
             txtResCity.Size = new Size(204, 27);
-            txtResCity.TabIndex = 25;
+            txtResCity.TabIndex = 8;
             // 
             // lblResCity
             // 
@@ -237,7 +237,7 @@
             lblResCity.Location = new Point(7, 219);
             lblResCity.Name = "lblResCity";
             lblResCity.Size = new Size(138, 19);
-            lblResCity.TabIndex = 22;
+            lblResCity.TabIndex = 0;
             lblResCity.Text = "Città di residenza:";
             // 
             // picLogo
@@ -248,7 +248,7 @@
             picLogo.Name = "picLogo";
             picLogo.Size = new Size(129, 77);
             picLogo.SizeMode = PictureBoxSizeMode.Zoom;
-            picLogo.TabIndex = 26;
+            picLogo.TabIndex = 0;
             picLogo.TabStop = false;
             // 
             // btnSubmit
@@ -259,7 +259,7 @@
             btnSubmit.Margin = new Padding(3, 4, 3, 4);
             btnSubmit.Name = "btnSubmit";
             btnSubmit.Size = new Size(449, 44);
-            btnSubmit.TabIndex = 27;
+            btnSubmit.TabIndex = 11;
             btnSubmit.Text = "Invia";
             btnSubmit.UseVisualStyleBackColor = false;
             btnSubmit.Click += btnSubmit_Click;

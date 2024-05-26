@@ -47,7 +47,7 @@
             btnAdd.Name = "btnAdd";
             btnAdd.Size = new Size(235, 36);
             btnAdd.TabIndex = 1;
-            btnAdd.Text = "+ Aggiungi un nuovo cliente";
+            btnAdd.Text = "Aggiungi un nuovo cliente";
             btnAdd.UseVisualStyleBackColor = true;
             btnAdd.Click += btnAdd_Click;
             // 
@@ -58,7 +58,7 @@
             btnDel.Name = "btnDel";
             btnDel.Size = new Size(235, 36);
             btnDel.TabIndex = 2;
-            btnDel.Text = "- Rimuovi un cliente";
+            btnDel.Text = "Rimuovi un cliente";
             btnDel.UseVisualStyleBackColor = true;
             btnDel.Click += btnDel_Click;
             // 
@@ -69,7 +69,7 @@
             btnEdit.Name = "btnEdit";
             btnEdit.Size = new Size(235, 36);
             btnEdit.TabIndex = 3;
-            btnEdit.Text = "+ Modifica un cliente";
+            btnEdit.Text = "Modifica un cliente";
             btnEdit.UseVisualStyleBackColor = true;
             btnEdit.Click += btnEdit_Click;
             // 
@@ -94,7 +94,8 @@
             dgvCustomers.ReadOnly = true;
             dgvCustomers.RowHeadersWidth = 51;
             dgvCustomers.Size = new Size(573, 452);
-            dgvCustomers.TabIndex = 6;
+            dgvCustomers.TabIndex = 0;
+            dgvCustomers.TabStop = false;
             // 
             // panelMenu
             // 
@@ -102,8 +103,8 @@
             panelMenu.BackColor = SystemColors.InactiveCaption;
             panelMenu.Location = new Point(-2, -1);
             panelMenu.Name = "panelMenu";
-            panelMenu.Size = new Size(307, 452);
-            panelMenu.TabIndex = 7;
+            panelMenu.Size = new Size(343, 452);
+            panelMenu.TabIndex = 0;
             // 
             // lblTitle
             // 
@@ -113,7 +114,7 @@
             lblTitle.Location = new Point(64, 9);
             lblTitle.Name = "lblTitle";
             lblTitle.Size = new Size(125, 52);
-            lblTitle.TabIndex = 5;
+            lblTitle.TabIndex = 0;
             lblTitle.Text = "Menù";
             // 
             // MainForm
