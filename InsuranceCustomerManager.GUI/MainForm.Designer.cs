@@ -38,6 +38,7 @@
             lblTitle = new Label();
             ((System.ComponentModel.ISupportInitialize)picLogo).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgvCustomers).BeginInit();
+            panelMenu.SuspendLayout();
             SuspendLayout();
             // 
             // btnAdd
@@ -54,7 +55,7 @@
             // btnDel
             // 
             btnDel.Font = new Font("Sylfaen", 9F, FontStyle.Bold);
-            btnDel.Location = new Point(11, 129);
+            btnDel.Location = new Point(13, 172);
             btnDel.Name = "btnDel";
             btnDel.Size = new Size(235, 36);
             btnDel.TabIndex = 2;
@@ -65,7 +66,7 @@
             // btnEdit
             // 
             btnEdit.Font = new Font("Sylfaen", 9F, FontStyle.Bold);
-            btnEdit.Location = new Point(11, 171);
+            btnEdit.Location = new Point(13, 130);
             btnEdit.Name = "btnEdit";
             btnEdit.Size = new Size(235, 36);
             btnEdit.TabIndex = 3;
@@ -108,6 +109,8 @@
             // 
             panelMenu.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             panelMenu.BackColor = SystemColors.InactiveCaption;
+            panelMenu.Controls.Add(btnDel);
+            panelMenu.Controls.Add(btnEdit);
             panelMenu.Location = new Point(-2, -1);
             panelMenu.Name = "panelMenu";
             panelMenu.Size = new Size(343, 452);
@@ -132,8 +135,6 @@
             Controls.Add(dgvCustomers);
             Controls.Add(lblTitle);
             Controls.Add(picLogo);
-            Controls.Add(btnEdit);
-            Controls.Add(btnDel);
             Controls.Add(btnAdd);
             Controls.Add(panelMenu);
             Icon = (Icon)resources.GetObject("$this.Icon");
@@ -142,6 +143,7 @@
             Text = "Orfelo assicurazioni";
             ((System.ComponentModel.ISupportInitialize)picLogo).EndInit();
             ((System.ComponentModel.ISupportInitialize)dgvCustomers).EndInit();
+            panelMenu.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }

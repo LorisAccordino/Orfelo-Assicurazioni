@@ -3,27 +3,36 @@ using System.ComponentModel;
 
 namespace InsuranceCustomerManager.GUI
 {
+    /// <summary>
+    /// Finestra di dialogo per la gestione dei clienti.
+    /// </summary>
     public partial class CustomerDialog : Form
     {
         private BindingSource bindingSource = new BindingSource();
         private ErrorProvider errorProvider = new ErrorProvider();
 
+        // Proprietà per accedere al cliente associato alla finestra di dialogo
         public Customer Customer { get; set; }
 
+        // Costruttore senza parametri, crea un nuovo cliente vuoto
         public CustomerDialog() : this(new Customer())
         {
             ResetFields();
             ControlBox = true;
         }
 
+        // Costruttore che accetta un cliente esistente
         public CustomerDialog(Customer customer)
         {
             InitializeComponent();
             Customer = customer;
+
+            // Inizializza i binding dei dati e la validazione dei campi
             InitializeBindings();
             InitializeValidation();
         }
 
+        // Inizializza i binding dei dati tra i controlli e l'entità cliente
         private void InitializeBindings()
         {
             bindingSource.DataSource = Customer;
@@ -38,6 +47,7 @@ namespace InsuranceCustomerManager.GUI
             txtPlate.DataBindings.Add("Text", bindingSource, "Plate", true, DataSourceUpdateMode.OnPropertyChanged, null);
         }
 
+        // Resetta i campi della finestra di dialogo ai valori predefiniti
         private void ResetFields()
         {
             dateTimePickerDob.Value = DateTime.Now;
@@ -47,6 +57,7 @@ namespace InsuranceCustomerManager.GUI
             cmbxVehicle.SelectedItem = cmbxVehicle.Items[0];
         }
 
+        // Inizializza la validazione dei campi obbligatori
         private void InitializeValidation()
         {
             txtName.Validating += new CancelEventHandler(ValidateRequiredField);
@@ -56,6 +67,7 @@ namespace InsuranceCustomerManager.GUI
             txtPlate.Validating += new CancelEventHandler(ValidateRequiredField);
         }
 
+        // Gestisce la validazione dei campi obbligatori
         private void ValidateRequiredField(object? sender, CancelEventArgs e)
         {
             if (sender is Control control) {
@@ -72,8 +84,10 @@ namespace InsuranceCustomerManager.GUI
             }
         }
 
+        // Gestisce il clic sul pulsante di invio
         private void btnSubmit_Click(object sender, EventArgs e)
         {
+            // Se tutti i controlli sono validi, chiude la finestra di dialogo con DialogResult.OK
             if (ValidateChildren())
             {
                 DialogResult = DialogResult.OK;
