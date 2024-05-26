@@ -6,7 +6,6 @@ Orfelo Assicurazioni è un sistema software sviluppato per gestire i clienti e l
 L'applicazione consente agli utenti di registrare i dettagli dei clienti, visualizzare le loro polizze e gestire le operazioni di aggiunta, modifica ed eliminazione dei dati.
 
 ### Architettura del Progetto
-
 Il progetto Orfelo Assicurazioni è stato sviluppato utilizzando il linguaggio di programmazione C# e il framework .NET. 
 La struttura del progetto è organizzata secondo le best practices di progettazione del software, con una suddivisione logica dei componenti in classi, moduli e layer.
 
