@@ -56,6 +56,15 @@ Questo attributo viene utilizzato per specificare il formato della colonna per u
 public DateTime DateOfBirth { get; set; }
 ```
 
+## Documentazione XML
+
+Il progetto fa ampio uso della documentazione XML per fornire informazioni dettagliate sulle classi, i metodi e gli attributi all'interno del codice. 
+Questa documentazione è integrata direttamente nell'IDE Visual Studio, 
+consentendo agli sviluppatori di visualizzare facilmente le descrizioni e i dettagli delle varie componenti del codice mentre scrivono e leggono il codice sorgente.
+
+Oltre alla documentazione XML, sono presenti anche commenti regolari nel codice per fornire ulteriori spiegazioni e contestualizzazioni. 
+Questo approccio combinato garantisce una migliore comprensione del codice e facilita il processo di sviluppo e manutenzione del progetto.
+
 
 ## Suddivisione del Lavoro
 - **Sviluppo del Codice**: Loris Accordino
