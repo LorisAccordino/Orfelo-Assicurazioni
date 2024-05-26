@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CustomerDialog));
             lblName = new Label();
             lblSurname = new Label();
             txtName = new TextBox();
@@ -40,10 +41,10 @@
             label5 = new Label();
             lblSex = new Label();
             cmbxSex = new ComboBox();
-            txtVehicle = new ComboBox();
+            cmbxVehicle = new ComboBox();
             radioBtnItaly = new RadioButton();
             radioBtnAbroad = new RadioButton();
-            txtPob = new TextBox();
+            txtBirthCity = new TextBox();
             txtPlate = new TextBox();
             txtResCity = new TextBox();
             lblResCity = new Label();
@@ -169,16 +170,16 @@
             cmbxSex.Size = new Size(74, 28);
             cmbxSex.TabIndex = 4;
             // 
-            // txtVehicle
+            // cmbxVehicle
             // 
-            txtVehicle.DropDownStyle = ComboBoxStyle.DropDownList;
-            txtVehicle.FormattingEnabled = true;
-            txtVehicle.Items.AddRange(new object[] { "- Automobile", "- Moto", "- Scooter", "- Ciclomotori", "- Furgoni", "- Camion", "- Autocarri leggeri", "- Autocarri pesanti", "- Trattori", "- Mietitrebbie", "- Macchine agricole", "- Camper", "- Roulotte", "- Carrelli da campeggio", "- Autobus", "- Taxi", "- Minibus", "- Ambulanze", "- Veicoli di emergenza", "- Veicoli blindati", "- Biciclette", "- Barche", "- Yacht", "- Moto d'acqua", "- Aeroplani leggeri", "- Elicotteri privati", "- Carrozzine motorizzate", "- Veicoli adattati" });
-            txtVehicle.Location = new Point(7, 317);
-            txtVehicle.Margin = new Padding(3, 4, 3, 4);
-            txtVehicle.Name = "txtVehicle";
-            txtVehicle.Size = new Size(204, 28);
-            txtVehicle.TabIndex = 9;
+            cmbxVehicle.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbxVehicle.FormattingEnabled = true;
+            cmbxVehicle.Items.AddRange(new object[] { "Automobile", "Moto", "Scooter", "Ciclomotore", "Furgone", "Camion", "Autocarro leggero", "Autocarri pesante", "Trattore", "Mietitrebbia", "Macchina agricola", "Camper", "Roulotte", "Carrello da campeggio", "Autobus", "Taxi", "Minibus", "Ambulanza", "Veicolo di emergenza", "Veicolo blindato", "Bicicletta", "Barca", "Yacht", "Moto d'acqua", "Aeroplano leggero", "Elicottero privato", "Carrozzina motorizzata", "Veicolo adattato" });
+            cmbxVehicle.Location = new Point(7, 317);
+            cmbxVehicle.Margin = new Padding(3, 4, 3, 4);
+            cmbxVehicle.Name = "cmbxVehicle";
+            cmbxVehicle.Size = new Size(204, 28);
+            cmbxVehicle.TabIndex = 9;
             // 
             // radioBtnItaly
             // 
@@ -206,13 +207,13 @@
             radioBtnAbroad.UseVisualStyleBackColor = true;
             radioBtnAbroad.Visible = false;
             // 
-            // txtPob
+            // txtBirthCity
             // 
-            txtPob.Location = new Point(7, 176);
-            txtPob.Margin = new Padding(3, 4, 3, 4);
-            txtPob.Name = "txtPob";
-            txtPob.Size = new Size(204, 27);
-            txtPob.TabIndex = 5;
+            txtBirthCity.Location = new Point(7, 176);
+            txtBirthCity.Margin = new Padding(3, 4, 3, 4);
+            txtBirthCity.Name = "txtBirthCity";
+            txtBirthCity.Size = new Size(204, 27);
+            txtBirthCity.TabIndex = 5;
             // 
             // txtPlate
             // 
@@ -258,7 +259,7 @@
             btnSubmit.Location = new Point(7, 377);
             btnSubmit.Margin = new Padding(3, 4, 3, 4);
             btnSubmit.Name = "btnSubmit";
-            btnSubmit.Size = new Size(449, 44);
+            btnSubmit.Size = new Size(480, 44);
             btnSubmit.TabIndex = 11;
             btnSubmit.Text = "Invia";
             btnSubmit.UseVisualStyleBackColor = false;
@@ -268,16 +269,17 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(471, 437);
+            ClientSize = new Size(495, 437);
+            ControlBox = false;
             Controls.Add(btnSubmit);
             Controls.Add(picLogo);
             Controls.Add(txtResCity);
             Controls.Add(lblResCity);
             Controls.Add(txtPlate);
-            Controls.Add(txtPob);
+            Controls.Add(txtBirthCity);
             Controls.Add(radioBtnAbroad);
             Controls.Add(radioBtnItaly);
-            Controls.Add(txtVehicle);
+            Controls.Add(cmbxVehicle);
             Controls.Add(cmbxSex);
             Controls.Add(lblSex);
             Controls.Add(label5);
@@ -291,10 +293,12 @@
             Controls.Add(lblSurname);
             Controls.Add(lblName);
             FormBorderStyle = FormBorderStyle.FixedDialog;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(3, 4, 3, 4);
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "CustomerDialog";
             Text = "EntryDialog";
-            Load += EntryDialog_Load;
             ((System.ComponentModel.ISupportInitialize)picLogo).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -314,10 +318,10 @@
         private Label label5;
         private Label lblSex;
         private ComboBox cmbxSex;
-        private ComboBox txtVehicle;
+        private ComboBox cmbxVehicle;
         private RadioButton radioBtnItaly;
         private RadioButton radioBtnAbroad;
-        private TextBox txtPob;
+        private TextBox txtBirthCity;
         private TextBox txtPlate;
         private TextBox txtResCity;
         private Label lblResCity;
