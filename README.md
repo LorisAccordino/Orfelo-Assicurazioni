@@ -25,7 +25,7 @@ Per installare Orfelo Assicurazioni, seguire i seguenti passaggi:
 
 1. Scaricare il repository dal link fornito.
 2. Estrarre il contenuto del file zip in una cartella sul proprio computer.
-3. Aprire il file di soluzione InsuranceCustomerManager.sln con Visual Studio.
+3. Aprire il file di soluzione ```InsuranceCustomerManager.sln``` con Visual Studio.
 4. Compilare ed eseguire il progetto.
 
 ## Dipendenze
