@@ -5,7 +5,7 @@ Orfelo Assicurazioni è un'applicazione per la gestione dei clienti e delle poli
 Orfelo Assicurazioni è un sistema software sviluppato per gestire i clienti e le polizze di un'azienda assicurativa. 
 L'applicazione consente agli utenti di registrare i dettagli dei clienti, visualizzare le loro polizze e gestire le operazioni di aggiunta, modifica ed eliminazione dei dati.
 
-### Architettura del Progetto
+## Architettura del Progetto
 Il progetto Orfelo Assicurazioni è stato sviluppato utilizzando il linguaggio di programmazione C# e il framework .NET. 
 La struttura del progetto è organizzata secondo le best practices di progettazione del software, con una suddivisione logica dei componenti in classi, moduli e layer.
 
@@ -14,13 +14,48 @@ La struttura del progetto è organizzata secondo le best practices di progettazi
 - **InsuranceCustomerManager.Console.Migrations**: Contiene il codice (auto generato e non) riguardante le migrazioni del DB avvenute in ambito test.
 - **InsuranceCustomerManager.GUI**: Contiene il codice per l'applicazione GUI di gestione dei clienti e delle polizze.
 
-### Diagrammi
+## Diagrammi UML
+Di seguito sono riportati alcuni diagrammi UML che mostrano la struttura delle classi nel progetto:
 
-#### Diagramma delle Classi UML
-![Diagramma delle Classi UML](uml_diagram.png)
+### Classi del DB
 
-#### Diagramma Entità-Relazione (ER)
-![Diagramma Entità-Relazione](er_diagram.png)
+![Diagramma UML delle classi del Database](DB UML.png)
+
+### Classi della GUI
+
+![Diagramma UML delle classi della GUI](GUI UML.png)
+
+## Attributi Personalizzati
+
+Nel progetto sono stati definiti alcuni attributi personalizzati per la gestione e visualizzazione dei dati nella GUI.
+
+### `ColumnHeaderAttribute`
+Questo attributo viene utilizzato per specificare l'intestazione della colonna per una proprietà.
+
+**Esempio di utilizzo**:
+```csharp
+[ColumnHeader("Nome")]
+public string Name { get; set; }
+```
+
+### `ColumnVisibilityAttribute`
+Questo attributo viene utilizzato per specificare la visibilità della colonna per una proprietà.
+
+**Esempio di utilizzo**:
+```csharp
+[ColumnVisibility(true)]
+public bool IsVisible { get; set; }
+```
+
+### `ColumnFormatAttribute`
+Questo attributo viene utilizzato per specificare il formato della colonna per una proprietà.
+
+**Esempio di utilizzo**:
+```csharp
+[ColumnFormat("dd/MM/yyyy")]
+public DateTime DateOfBirth { get; set; }
+```
+
 
 ## Suddivisione del Lavoro
 - **Sviluppo del Codice**: Loris Accordino
