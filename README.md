@@ -19,11 +19,11 @@ Di seguito sono riportati alcuni diagrammi UML che mostrano la struttura delle c
 
 ### Classi del DB
 
-![Diagramma UML delle classi del Database](DB UML.png)
+![Diagramma UML delle classi del Database](DB_UML.png)
 
 ### Classi della GUI
 
-![Diagramma UML delle classi della GUI](GUI UML.png)
+![Diagramma UML delle classi della GUI](GUI_UML.png)
 
 ## Attributi Personalizzati
 
