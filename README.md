@@ -48,7 +48,7 @@ Assicurarsi di descrivere chiaramente le modifiche apportate e il motivo per cui
 
 ## Contributi
 Siamo grati a tutti coloro che contribuiscono a migliorare Orfelo Assicurazioni. 
-Se desideri contribuire al progetto, consulta il file CONTRIBUTING.md per ulteriori informazioni su come partecipare.
+Se desideri contribuire al progetto, consulta il file [CONTRIBUTING.md](CONTRIBUTING.md) per ulteriori informazioni su come partecipare.
 
 ## Release e Tags
 Assicurarsi di controllare le release e i tag nel repository per le versioni stabili e le funzionalità aggiuntive. 
@@ -70,10 +70,10 @@ Ringraziamo tutti coloro che hanno contribuito a rendere possibile questo proget
 Il vostro supporto è molto apprezzato!
 
 ## Roadmap
-Per ulteriori informazioni sulle prossime funzionalità e miglioramenti pianificati per Orfelo Assicurazioni, consulta il file ROADMAP.md nel repository.
+Per ulteriori informazioni sulle prossime funzionalità e miglioramenti pianificati per Orfelo Assicurazioni, consulta il file [ROADMAP.md](ROADMAP.md) nel repository.
 
 ## Changelog
-Consulta il file CHANGELOG.md nel repository per un registro completo delle modifiche apportate a ogni versione di Orfelo Assicurazioni.
+Consulta il file [CHANGELOG.md](CHANGELOG.md) nel repository per un registro completo delle modifiche apportate a ogni versione di Orfelo Assicurazioni.
 
 ---
 
